@@ -22,9 +22,9 @@ kbd {
     justify-content: center;
 }
 .key {
-    border: 5px solid black;
+    border: 5px solid rgb(255, 0, 0);
     border-radius: .5rem;
-    background: rgba(0, 0, 0, 0.308);
+    background: rgb(22, 22, 22);
     margin: 1rem;
     transition: all .09s;
     width: 5rem;
