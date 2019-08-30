@@ -1,0 +1,29 @@
+html  {
+    font-family: 'Noto Serif', serif;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+}
+
+body{
+    background: url("http://eskipaper.com/images/the-beatles-28.jpg") no-repeat;
+    
+}
+
+.keys {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1px solid red;
+    align-items: center;
+    margin-top: 20%;
+    font-size: 25px;
+}
+.key {
+    border: 5px solid gray;
+    background: rgba(0, 0, 0, 0.308);
+    margin: 5px;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+
+}
