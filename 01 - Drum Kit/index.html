@@ -61,13 +61,22 @@
       
       <script>
           window.addEventListener('keydown', function(x){
-            const audio = document.querySelector(`audio[data-key="${x.keyCode}"]`)
-            console.log(audio);
+            const audio = document.querySelector(`audio[data-key="${x.keyCode}"]`);
+            const key = document.querySelector(`div[data-key="${x.keyCode}"]`);
             if (!audio) return;
             audio.currentTime = 0;
             audio.play();
-          });
+            key.classList.add('tocando');
+          });//Tocar o som quando aperta a Tecla
 
+
+          const keys = Array.from(document.querySelectorAll('.key'));
+          keys.forEach(key => key.addEventListener('transitionend', removertrans)); // Chamar a função de remover transform 
+
+          function removertrans(x) {
+          if (x.propertyName !== 'transform') return;
+          x.target.classList.remove('tocando');//Remover os atributos de transform
+  }
 
 
       </script>

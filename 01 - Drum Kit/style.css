@@ -6,24 +6,33 @@ html  {
 
 body{
     background: url("http://eskipaper.com/images/the-beatles-28.jpg") no-repeat;
+    background-size: cover;
     
+}
+kbd {
+    display: block;
+    font-size: 4rem;
 }
 
 .keys {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    border: 1px solid red;
+    flex: 1;
+    min-height: 100vh;
     align-items: center;
-    margin-top: 20%;
-    font-size: 25px;
+    justify-content: center;
 }
 .key {
-    border: 5px solid gray;
+    border: 5px solid black;
+    border-radius: .5rem;
     background: rgba(0, 0, 0, 0.308);
-    margin: 5px;
+    margin: 1rem;
+    transition: all .09s;
+    width: 5rem;
     padding: 5px;
     color: rgb(255, 255, 255);
 
+}
+.tocando {
+    transform:scale(1.1);
+    border-color: darkgreen;
 }
